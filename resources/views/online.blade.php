@@ -420,22 +420,17 @@
     window.Echo.join('common_room')
         .here((users) => {
             console.log('here');
-            console.log(users);
             onlineUsers = users.length;
             update_online_counter();
         })
         .joining((user) => {
             console.log('joining');
-            console.log(user);
             onlineUsers++;
-
             update_online_counter();
         })
         .leaving((user) => {
             console.log('leaving');
-            console.log(user);
             onlineUsers--;
-
             update_online_counter();
         });
 </script>
