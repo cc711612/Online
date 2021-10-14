@@ -21,11 +21,8 @@ PUSHER_APP_SECRET=onlineonline</span></span></span></span></pre>
 npm install
 composer install
 composer require laravel/passport
-composer require pusher/pusher-php-server "~3.0"
-npm install --save laravel-echo pusher-js <br />composer require beyondcode/laravel-websockets
-php artisan vendor:publish --provider="BeyondCode\LaravelWebSockets\WebSocketsServiceProvider" --tag="migrations"
-php artisan migrate
-php artisan vendor:publish --provider="BeyondCode\LaravelWebSockets\WebSocketsServiceProvider" --tag="config"<br /></span></span></span></span></span></span></span></span></pre>
+php artisan key:generate
+<br /></span></span></span></span></span></span></span></span></pre>
 <p><strong>啟動websocket(預設port:6001)</strong></p>
 <pre style="box-sizing: border-box; -webkit-font-smoothing: antialiased; background: #2f333d; font-family: Menlo, Monaco, monospace; line-height: 21px; margin-bottom: 1.5em; overflow: auto; padding: 12.3438px 15.4219px; border: 1px solid #292c33; border-radius: 4px; color: #d2d2d2; font-size: 14px;"><span style="color: #d2d2d2; font-family: Menlo, Monaco, monospace;"><span style="font-size: 14px;"># 預設port:6001<br />php artisan websockets:serve<br />//</span></span>php artisan websockets:serve --port=6001</pre>
 <p><strong>範例畫面</strong></p>
